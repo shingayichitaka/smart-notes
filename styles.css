@@ -1,0 +1,129 @@
+:root {
+  --background: #0f0e17;
+  --background-lighter: #232946;
+  --headline: #fffffe;
+  --paragraph: #a7a9be;
+  --button: #ff8906;
+  --button-hover: #ef850bda;
+  --button-text: #fffffe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: var(--background);
+  color: var(--headline);
+  width: 80%;
+  margin: 0 auto;
+}
+main {
+  margin: 2.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+li {
+  list-style-type: none;
+  color: var(--paragraph);
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.category {
+  border: 0;
+  border-radius: 0.5rem;
+  width: 20%;
+}
+.notes {
+  width: 75%;
+  /* background-color: var(--background-lighter); */
+  border: 0;
+  border-radius: 0.5rem;
+}
+.notes-list li {
+  background-color: var(--background-lighter);
+  padding: 2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  margin: 0 0;
+  margin-bottom: 2rem;
+}
+h1 {
+  font-size: 5rem;
+  margin: 2rem 0;
+  color: var(--headline);
+}
+h2 {
+  color: var(--headline);
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+p {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: var(--paragraph);
+}
+input {
+  display: block;
+  font-size: 2.5rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--paragraph);
+  color: #1b1b1b;
+  font-family: "Barlow", sans-serif;
+  width: 100%;
+}
+button {
+  font-size: 2.5rem;
+  display: block;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: var(--button);
+  color: var(--button-text);
+  font-family: "Barlow", sans-serif;
+  width: 100%;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--button-hover);
+}
+.category button {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.category li {
+  margin: 0;
+}
+.textarea,
+select {
+  display: block;
+  font-size: 2.5rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--paragraph);
+  color: #1b1b1b;
+  font-family: "Barlow", sans-serif;
+  width: 100%;
+  resize: none;
+}
